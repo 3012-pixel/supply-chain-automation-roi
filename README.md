@@ -43,7 +43,7 @@ subject to  Σ capex_i · x_i      ≤ budget
 ## 3. How to run
 
 ```bash
-git clone https://github.com/3012-pixel/supply-chain-automation-roi.git
+git clone https://github.com/kumar-aditya-data/supply-chain-automation-roi.git
 cd supply-chain-automation-roi
 python -m venv .venv
 .venv\Scripts\activate          # Windows  (macOS/Linux: source .venv/bin/activate)
