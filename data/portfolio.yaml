@@ -1,0 +1,7 @@
+# SYNTHETIC DATA - illustrative only.
+# Pick the NPV-maximising mix of automation options under capital and floor-space limits.
+options_csv: automation_options.csv   # resolved relative to this file
+currency: GBP
+budget: 4000000
+space_m2: 1000
+discount_rate: 0.09

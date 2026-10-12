@@ -1,0 +1,9 @@
+option_id,name,capex,footprint_m2,annual_net_benefit,life_years,exclusive_group
+AGV-S,AGV fleet (6 vehicles),650000,120,150000,8,agv
+AGV-L,AGV fleet (14 vehicles),1400000,220,300000,8,agv
+G2P,Goods-to-person shuttle picking,3200000,900,620000,10,picking
+PTL,Pick-to-light zones,380000,60,95000,7,picking
+SORT,Automated parcel sorter,1100000,450,210000,10,
+CBX,Automatic carton erector,240000,40,70000,7,
+PAL,Robotic palletiser,520000,80,105000,9,
+VLM,Vertical lift modules (x4),450000,35,85000,10,

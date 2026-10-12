@@ -1,0 +1,19 @@
+# SYNTHETIC DATA - illustrative only. Not sourced from any real company.
+name: AGV fleet - regional DC
+description: Replace manual forklift pallet moves between inbound, reserve storage and outbound with an AGV fleet.
+synthetic: true
+currency: GBP
+capex: 1450000              # vehicles, navigation, WMS integration, commissioning
+project_life_years: 8
+discount_rate: 0.09         # assumed hurdle rate / WACC
+annual_labour_savings: 410000
+labour_cost_escalation: 0.03
+annual_opex_savings: 35000  # less product/racking damage
+annual_maintenance_cost: 95000
+ramp_up: [0.6, 0.9, 1.0]    # share of benefits realised in years 1, 2, 3+
+salvage_value: 120000
+throughput:
+  baseline_units_per_year: 3200000
+  gain_pct: 0.06
+  contribution_margin_per_unit: 0.15
+  capacity_cap_units_per_year: 3300000   # outbound dock capacity binds before the full 6%

@@ -1,0 +1,18 @@
+parameter,value
+name,Sortation retrofit - small site
+description,Retrofit a small automated parcel sorter at a low-volume site (SYNTHETIC DATA - illustrative only)
+synthetic,true
+currency,GBP
+capex,900000
+project_life_years,6
+discount_rate,0.11
+annual_labour_savings,140000
+labour_cost_escalation,0.025
+annual_opex_savings,20000
+annual_maintenance_cost,45000
+ramp_up,0.5;1.0
+salvage_value,50000
+throughput.baseline_units_per_year,1500000
+throughput.gain_pct,0.10
+throughput.contribution_margin_per_unit,0.10
+throughput.capacity_cap_units_per_year,1550000

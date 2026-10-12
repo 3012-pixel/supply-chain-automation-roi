@@ -1,0 +1,23 @@
+# SYNTHETIC DATA - illustrative only. Not sourced from any real company.
+name: Goods-to-person picking
+description: Shuttle-based goods-to-person picking system replacing person-to-goods picker walking.
+synthetic: true
+currency: GBP
+capex: 4800000
+project_life_years: 10
+discount_rate: 0.10
+annual_labour_savings: 980000
+labour_cost_escalation: 0.03
+annual_opex_savings: 60000
+annual_maintenance_cost: 240000
+ramp_up: [0.5, 0.85, 1.0]
+salvage_value: 300000
+throughput:
+  baseline_units_per_year: 5000000
+  gain_pct: 0.15
+  contribution_margin_per_unit: 0.20
+  capacity_cap_units_per_year: 6000000
+scenarios:
+  Worst: {capex: 1.20, savings: 0.75, discount_rate: 1.20, throughput_gain: 0.5}
+  Base: {}
+  Best: {capex: 0.95, savings: 1.10, discount_rate: 0.90, throughput_gain: 1.2}
