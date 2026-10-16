@@ -33,7 +33,7 @@ class PortfolioConfig:
     budget: float
     space_m2: float
     discount_rate: float
-    currency: str = "GBP"
+    currency: str = "EUR"
 
 
 @dataclass(frozen=True)
@@ -77,7 +77,7 @@ def load_portfolio_config(path: str | Path) -> PortfolioConfig:
         budget=float(data["budget"]),
         space_m2=float(data["space_m2"]),
         discount_rate=float(data["discount_rate"]),
-        currency=str(data.get("currency", "GBP")),
+        currency=str(data.get("currency", "EUR")),
     )
 
 

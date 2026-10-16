@@ -64,7 +64,7 @@ class ScenarioInputs:
     throughput: ThroughputInputs = field(default_factory=ThroughputInputs)
     ramp_up: tuple[float, ...] = (1.0,)
     salvage_value: float = 0.0
-    currency: str = "GBP"
+    currency: str = "EUR"
     description: str = ""
     synthetic: bool = True
     scenarios: dict[str, dict[str, float]] = field(

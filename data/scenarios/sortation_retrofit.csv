@@ -2,7 +2,7 @@ parameter,value
 name,Sortation retrofit - small site
 description,Retrofit a small automated parcel sorter at a low-volume site (SYNTHETIC DATA - illustrative only)
 synthetic,true
-currency,GBP
+currency,EUR
 capex,900000
 project_life_years,6
 discount_rate,0.11

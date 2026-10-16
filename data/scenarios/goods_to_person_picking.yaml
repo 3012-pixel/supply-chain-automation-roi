@@ -2,7 +2,7 @@
 name: Goods-to-person picking
 description: Shuttle-based goods-to-person picking system replacing person-to-goods picker walking.
 synthetic: true
-currency: GBP
+currency: EUR
 capex: 4800000
 project_life_years: 10
 discount_rate: 0.10

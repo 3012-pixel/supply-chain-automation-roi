@@ -2,7 +2,7 @@
 name: AGV fleet - regional DC
 description: Replace manual forklift pallet moves between inbound, reserve storage and outbound with an AGV fleet.
 synthetic: true
-currency: GBP
+currency: EUR
 capex: 1450000              # vehicles, navigation, WMS integration, commissioning
 project_life_years: 8
 discount_rate: 0.09         # assumed hurdle rate / WACC

@@ -19,7 +19,7 @@ def _money(currency: str) -> FuncFormatter:
     return FuncFormatter(lambda v, _: f"{currency} {v / 1e3:,.0f}k")
 
 
-def plot_tornado(tornado_df: pd.DataFrame, path: str | Path, currency: str = "GBP",
+def plot_tornado(tornado_df: pd.DataFrame, path: str | Path, currency: str = "EUR",
                  swing: float = 0.20, title: str = "") -> Path:
     """Save a tornado chart of NPV sensitivity and return the file path."""
     path = Path(path)
@@ -42,7 +42,7 @@ def plot_tornado(tornado_df: pd.DataFrame, path: str | Path, currency: str = "GB
     return path
 
 
-def plot_cumulative_cash_flow(cash_flows: pd.DataFrame, path: str | Path, currency: str = "GBP",
+def plot_cumulative_cash_flow(cash_flows: pd.DataFrame, path: str | Path, currency: str = "EUR",
                               title: str = "") -> Path:
     """Save cumulative (undiscounted and discounted) cash-flow lines."""
     path = Path(path)

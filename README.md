@@ -74,17 +74,17 @@ You can also run `python -m scroi ...` without installing the package. To model 
 
 | Scenario | Capex | NPV | IRR | Payback | Discounted payback | Decision |
 |---|---:|---:|---:|---:|---:|:---:|
-| AGV fleet, regional DC | £1,450,000 | £641,644 | 18.4% | 4.35 yrs | 5.58 yrs | **GO** |
-| Goods-to-person picking | £4,800,000 | £1,185,320 | 14.6% | 5.47 yrs | 7.86 yrs | **GO** |
-| Sortation retrofit, small site | £900,000 | −£406,353 | −4.6% | never | never | **NO-GO** |
+| AGV fleet, regional DC | €1,450,000 | €641,644 | 18.4% | 4.35 yrs | 5.58 yrs | **GO** |
+| Goods-to-person picking | €4,800,000 | €1,185,320 | 14.6% | 5.47 yrs | 7.86 yrs | **GO** |
+| Sortation retrofit, small site | €900,000 | −€406,353 | −4.6% | never | never | **NO-GO** |
 
 **Scenario analysis, AGV fleet**
 
 | Scenario | NPV | IRR | Discounted payback | Decision |
 |---|---:|---:|---:|:---:|
-| Worst (capex +15%, savings −20%, rate +20%, throughput gain −50%) | −£191,950 | 7.9% | never | NO-GO |
-| Base | £641,644 | 18.4% | 5.58 yrs | GO |
-| Best (capex −5%, savings +10%, rate −10%, throughput gain +25%) | £1,053,832 | 23.2% | 4.61 yrs | GO |
+| Worst (capex +15%, savings −20%, rate +20%, throughput gain −50%) | −€191,950 | 7.9% | never | NO-GO |
+| Base | €641,644 | 18.4% | 5.58 yrs | GO |
+| Best (capex −5%, savings +10%, rate −10%, throughput gain +25%) | €1,053,832 | 23.2% | 4.61 yrs | GO |
 
 **Sensitivity (tornado)**
 
@@ -94,20 +94,20 @@ You can also run `python -m scroi ...` without installing the package. To model 
 
 ![Payback chart](docs/images/agv_fleet_regional_dc_payback.png)
 
-**Portfolio optimisation**: £4.0M budget, 1,000 m² of free floor space
+**Portfolio optimisation**: €4.0M budget, 1,000 m² of free floor space
 
 | Selected | Option | Capex | Footprint | NPV @ 9% |
 |---|---|---:|---:|---:|
-| ✅ | Goods-to-person shuttle picking | £3,200,000 | 900 m² | £778,948 |
-| ✅ | Automatic carton erector | £240,000 | 40 m² | £112,307 |
-| ✅ | Vertical lift modules (x4) | £450,000 | 35 m² | £95,501 |
-| | **Total** | **£3,890,000** | **975 m²** | **£986,755** |
+| ✅ | Goods-to-person shuttle picking | €3,200,000 | 900 m² | €778,948 |
+| ✅ | Automatic carton erector | €240,000 | 40 m² | €112,307 |
+| ✅ | Vertical lift modules (x4) | €450,000 | 35 m² | €95,501 |
+| | **Total** | **€3,890,000** | **975 m²** | **€986,755** |
 
 ### What the numbers say (synthetic example)
 
-- **The AGV case is driven by labour savings, not throughput.** A ±20% change in savings moves NPV by about £990k. The same change in throughput gain moves it by **£0**, because the outbound dock cap (3.3M units/yr) binds either way. *Takeaway: don't pay extra for faster vehicles until the dock constraint is fixed.*
+- **The AGV case is driven by labour savings, not throughput.** A ±20% change in savings moves NPV by about €990k. The same change in throughput gain moves it by **€0**, because the outbound dock cap (3.3M units/yr) binds either way. *Takeaway: don't pay extra for faster vehicles until the dock constraint is fixed.*
 - **The AGV case is not robust to a bad outcome.** In the worst case NPV turns negative, so lock in labour savings (redeployment plan, shift model) before committing capex.
-- **Positive NPV is not the same as "fund it".** The standalone AGV fleet is NPV-positive, but under the budget and space limits the optimiser prefers goods-to-person picking plus two small, high-return projects. Cut the budget to £2.5M (`--budget 2500000`) and the best mix changes completely: small AGV fleet + pick-to-light + sorter + carton erector (NPV £638k). The ranking depends on the constraint, so it should be re-run whenever the budget changes.
+- **Positive NPV is not the same as "fund it".** The standalone AGV fleet is NPV-positive, but under the budget and space limits the optimiser prefers goods-to-person picking plus two small, high-return projects. Cut the budget to €2.5M (`--budget 2500000`) and the best mix changes completely: small AGV fleet + pick-to-light + sorter + carton erector (NPV €638k). The ranking depends on the constraint, so it should be re-run whenever the budget changes.
 - **The small-site sorter should not go ahead** at current volumes. It never pays back within its 6-year life.
 
 The Excel report (`outputs/<scenario>_report.xlsx`) contains all of this, with every sheet labelled as synthetic data.
